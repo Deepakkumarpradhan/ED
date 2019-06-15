@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1560591312734" stop="1560591428387" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify the basic functionality of ED</name>
+    <description type="text"></description>
+    <test-cases>
+        <test-case start="1560591313362" stop="1560591427478" status="passed">
+            <name>I could book a table easily</name>
+            <title>I could book a table easily</title>
+            <description type="text"></description>
+            <steps>
+                <step start="1560591313437" stop="1560591360921" status="passed">
+                    <name>Given I navigate to easydiner</name>
+                    <title>Given I navigate to easydiner</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1560591361007" stop="1560591427446" status="passed">
+                    <name>And Select a city</name>
+                    <title>And Select a city</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1560591427450" stop="1560591427456" status="passed">
+                    <name>And Select date and time</name>
+                    <title>And Select date and time</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1560591427460" stop="1560591427466" status="passed">
+                    <name>When I click on book now</name>
+                    <title>When I click on book now</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1560591427468" stop="1560591427473" status="passed">
+                    <name>Then It should navigate to payment page</name>
+                    <title>Then It should navigate to payment page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="I could book a table easily"/>
+                <label name="feature" value="Verify the basic functionality of ED"/>
+                <label name="host" value="DESKTOP-KP5HJ9N"/>
+                <label name="thread" value="4540@DESKTOP-KP5HJ9N.main(1)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+        <test-case start="1560591428352" stop="1560591428377" status="passed">
+            <name>Close browser</name>
+            <title>Close browser</title>
+            <description type="text"></description>
+            <steps>
+                <step start="1560591428366" stop="1560591428370" status="passed">
+                    <name>Then I close browser</name>
+                    <title>Then I close browser</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Close browser"/>
+                <label name="feature" value="Verify the basic functionality of ED"/>
+                <label name="host" value="DESKTOP-KP5HJ9N"/>
+                <label name="thread" value="4540@DESKTOP-KP5HJ9N.main(1)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="feature" value="Verify the basic functionality of ED"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

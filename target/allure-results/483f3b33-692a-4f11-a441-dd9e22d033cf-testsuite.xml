@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1560606036189" stop="1560606038750" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify the basic functionality of ED</name>
+    <description type="text"></description>
+    <test-cases>
+        <test-case start="1560606037095" stop="1560606038703" status="broken">
+            <name>I could book a table easily</name>
+            <title>I could book a table easily</title>
+            <description type="text"></description>
+            <failure>
+                <message>UnsatisfiableDependenciesException: com.easyDiner.stepDefinitions.UserStepDefinitions has unsatisfied dependency 'interface org.openqa.selenium.WebDriver' for constructor 'public com.easyDiner.stepDefinitions.UserStepDefinitions(org.openqa.selenium.WebDriver)' from org.picocontainer.DefaultPicoContainer@64ba3208:1&lt;|</message>
+                <stack-trace>org.picocontainer.injectors.AbstractInjector$UnsatisfiableDependenciesException: com.easyDiner.stepDefinitions.UserStepDefinitions has unsatisfied dependency 'interface org.openqa.selenium.WebDriver' for constructor 'public com.easyDiner.stepDefinitions.UserStepDefinitions(org.openqa.selenium.WebDriver)' from org.picocontainer.DefaultPicoContainer@64ba3208:1&lt;|
+	at org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:191)
+	at org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:110)
+	at org.picocontainer.injectors.ConstructorInjector.access$100(ConstructorInjector.java:51)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:331)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:670)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+	at ✽.Given I navigate to easydiner(testEDFirst.feature:4)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1560606037349" stop="1560606038464" status="broken">
+                    <name>Given I navigate to easydiner</name>
+                    <title>Given I navigate to easydiner</title>
+                </step>
+                <step start="1560606038601" stop="1560606038635" status="canceled">
+                    <name>And Select a city</name>
+                    <title>And Select a city</title>
+                </step>
+                <step start="1560606038648" stop="1560606038659" status="canceled">
+                    <name>And Select date and time</name>
+                    <title>And Select date and time</title>
+                </step>
+                <step start="1560606038666" stop="1560606038682" status="canceled">
+                    <name>When I click on book now</name>
+                    <title>When I click on book now</title>
+                </step>
+                <step start="1560606038687" stop="1560606038696" status="canceled">
+                    <name>Then It should navigate to payment page</name>
+                    <title>Then It should navigate to payment page</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="I could book a table easily"/>
+                <label name="feature" value="Verify the basic functionality of ED"/>
+                <label name="host" value="DESKTOP-KP5HJ9N"/>
+                <label name="thread" value="11360@DESKTOP-KP5HJ9N.main(1)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+        <test-case start="1560606038710" stop="1560606038741" status="broken">
+            <name>Close browser</name>
+            <title>Close browser</title>
+            <description type="text"></description>
+            <failure>
+                <message>UnsatisfiableDependenciesException: com.easyDiner.stepDefinitions.UserStepDefinitions has unsatisfied dependency 'interface org.openqa.selenium.WebDriver' for constructor 'public com.easyDiner.stepDefinitions.UserStepDefinitions(org.openqa.selenium.WebDriver)' from org.picocontainer.DefaultPicoContainer@333dd51e:1&lt;|</message>
+                <stack-trace>org.picocontainer.injectors.AbstractInjector$UnsatisfiableDependenciesException: com.easyDiner.stepDefinitions.UserStepDefinitions has unsatisfied dependency 'interface org.openqa.selenium.WebDriver' for constructor 'public com.easyDiner.stepDefinitions.UserStepDefinitions(org.openqa.selenium.WebDriver)' from org.picocontainer.DefaultPicoContainer@333dd51e:1&lt;|
+	at org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:191)
+	at org.picocontainer.injectors.ConstructorInjector.getGreediestSatisfiableConstructor(ConstructorInjector.java:110)
+	at org.picocontainer.injectors.ConstructorInjector.access$100(ConstructorInjector.java:51)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:331)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:670)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+	at ✽.Then I close browser(testEDFirst.feature:11)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1560606038729" stop="1560606038740" status="broken">
+                    <name>Then I close browser</name>
+                    <title>Then I close browser</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Close browser"/>
+                <label name="feature" value="Verify the basic functionality of ED"/>
+                <label name="host" value="DESKTOP-KP5HJ9N"/>
+                <label name="thread" value="11360@DESKTOP-KP5HJ9N.main(1)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="feature" value="Verify the basic functionality of ED"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
